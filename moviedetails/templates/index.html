@@ -1,0 +1,16 @@
+<h1>Movies</h1>
+
+<table border="1">
+{% for m in mymovies %}
+<tr>
+<td>{{ m.id }}</td>
+<td>{{ m.Name }}</td>
+<td>{{ m.Story }}</td>
+<td>{{ m.Actor }}</td>
+<td>{{ m.Genre }}</td>
+<td>{{ m.Year }}</td>
+<td>{{ m.Budget }}</td>
+<td>{{ m.BoxOfficeCollection }}</td>
+</tr>
+{% endfor %}
+</table>
